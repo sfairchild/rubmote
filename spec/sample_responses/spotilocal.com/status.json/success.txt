@@ -1,0 +1,54 @@
+HTTP/1.1 200 OK
+Pragma: no-cache
+Cache-Control: no-cache
+Connection: close
+Content-Length: 1066
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+
+{
+"version": 9, 
+"client_version": "1.0.52.725.g943b26a8", 
+"playing": true, 
+"shuffle": false, 
+"repeat": false, 
+"play_enabled": true, 
+"prev_enabled": false, 
+"next_enabled": true, 
+"track": {
+  "track_resource": {
+    "name": "Bohemian Rhapsody", 
+    "uri": "spotify:track:0lrkMvRttmoXjMNS8YONvj", 
+    "location": {
+      "og": "https://open.spotify.com/track/0lrkMvRttmoXjMNS8YONvj"
+    }
+  }, 
+  "artist_resource": {
+    "name": "Pentatonix", 
+    "uri": "spotify:artist:26AHtbjWKiwYzsoGoUZq53", 
+    "location": {
+      "og": "https://open.spotify.com/artist/26AHtbjWKiwYzsoGoUZq53"
+    }
+  }, 
+  "album_resource": {
+    "name": "PTX Vol. IV - Classics", 
+    "uri": "spotify:album:00JpoY0ZaQRXTNJUruibfX", 
+    "location": {
+      "og": "https://open.spotify.com/album/00JpoY0ZaQRXTNJUruibfX"
+    }
+  }, 
+  "length": 355, 
+  "track_type": "normal"
+}, 
+"context": {
+}, 
+"playing_position": 11.243, 
+"server_time": 1491936324, 
+"volume": 1, 
+"online": true, 
+"open_graph_state": {
+  "private_session": false, 
+  "posting_disabled": true
+}, 
+"running": true
+}
