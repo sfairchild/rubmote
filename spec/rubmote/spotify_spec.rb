@@ -8,13 +8,9 @@ describe Rubmote::Spotify do
 
 	subject { Rubmote::Spotify.new }
 
-	let(:token_success) {
-		File.new(File.join(RSpec.root, 'sample_responses', 'open.spotify.com', 'token', 'success.txt'))
-	}
-
-	let(:csrf_token_success) {
-		File.new(File.join(RSpec.root, 'sample_responses', 'spotilocal.com', 'token.json', 'success.txt'))
-	}
+	let(:token_success) { File.new(File.join(RSpec.root, 'sample_responses', 'open.spotify.com', 'token', 'success.txt')) }
+	let(:csrf_token_success) { File.new(File.join(RSpec.root, 'sample_responses', 'spotilocal.com', 'token.json', 'success.txt')) }
+	let(:csrf_token_no_login) { File.new(File.join(RSpec.root, 'sample_responses', 'spotilocal.com', 'token.json', 'not_logged_in.txt')) }
 
   it 'has a token reader method' do
     expect(Rubmote::Spotify.method_defined?(:token)).to be true
@@ -46,5 +42,10 @@ describe Rubmote::Spotify do
     it 'gets a new csrf token' do
       expect(subject.csrf_token).to eq('f18505af00afa8d4014a9fef3a4c6a9f')
     end
+
+		it 'rasies an error if spotify in not logged in' do
+			stub_request(:get, /[a-z]{10}\.spotilocal\.com\:4370\/simplecsrf\/token\.json/).to_return(csrf_token_no_login)
+			expect{ subject }.to raise_error(Rubmote::Spotify::NotLoggedInError)
+		end
   end
 end
