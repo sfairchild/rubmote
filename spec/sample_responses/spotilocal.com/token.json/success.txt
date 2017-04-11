@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Pragma: no-cache
+Cache-Control: no-cache
+Connection: close
+Content-Length: 47
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: https://open.spotify.com
+Access-Control-Allow-Credentials: true
+
+{
+"token": "f18505af00afa8d4014a9fef3a4c6a9f"
+}

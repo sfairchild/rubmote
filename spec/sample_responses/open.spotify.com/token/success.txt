@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 11 Apr 2017 14:22:11 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=600
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.5.9-1ubuntu4.14
+Set-Cookie: sp_landing=http%3A%2F%2Fopen.spotify.com%2Ftoken; expires=Wed, 12-Apr-2017 14:22:11 GMT; Max-Age=86400; path=/; domain=.spotify.com
+Set-Cookie: sp_t=7ff7cfda7cb46556bf5fb1d467cac7f5; expires=Sat, 10-Jun-2017 14:22:11 GMT; Max-Age=5184000; path=/; domain=.spotify.com; secure
+Cache-Control: max-age=118, private
+Expires: Tue, 11 Apr 2017 14:24:09 GMT
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000;
+
+{"t":"NAowChgKB1Nwb3RpZnkSABoGmAEByAEBJV1W7VgSFPLkH2iipjle98GYNEiBSFE-9Ymq"}

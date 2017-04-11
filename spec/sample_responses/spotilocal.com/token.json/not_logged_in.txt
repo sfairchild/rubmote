@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 135
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+Pragma: no-cache
+
+{"error": { "type": "4110", "message": "No user logged in" }, "version": 9, "client_version": "1.0.52.725.g943b26a8", "running": false}
